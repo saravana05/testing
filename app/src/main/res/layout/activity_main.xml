@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginbg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/worklogo"/>
+
+    <LinearLayout
+        android:id="@+id/loginlyt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_above="@id/loginlyt2"
+        android:background="@drawable/layout_corner"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/usericon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/usericon"/>
+
+        <EditText
+            android:id="@+id/edtusername"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:layout_marginLeft="08dp"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginlyt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/layout_corner"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/userpassword"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/password"/>
+
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:hint="@string/password"
+            android:layout_marginLeft="08dp"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginlyt3"
+        android:layout_below="@id/loginlyt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/okbtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:text="@string/sign_in"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginlyt4"
+        android:layout_below="@id/loginlyt3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotpass"
+            android:textColor="@color/blue"
+            android:text="@string/forgotpassword"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

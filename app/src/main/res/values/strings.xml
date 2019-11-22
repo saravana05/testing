@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="username">email</string>
+    <string name="password">password</string>
+    <string name="sign_in">login</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="forgotpassword">forgot_password?</string>
+</resources>
